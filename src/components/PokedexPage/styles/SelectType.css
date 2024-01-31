@@ -1,0 +1,14 @@
+.pokedexpage__types {
+    width: 24em;
+}
+
+@media only screen and (max-width: 800px) {
+    .pokedexpage__types {
+        width: 90%;
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+        height: 2.5em;
+        margin-top: 1em;
+    }
+}

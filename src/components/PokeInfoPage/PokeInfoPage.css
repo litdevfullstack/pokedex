@@ -1,0 +1,470 @@
+.grass {
+
+    --color: #416460;
+
+    --header-gradient: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+
+    --border-gradient: linear-gradient(179.27deg, #B1DBBC -20.76%, #C3DEA3 157.95%);
+
+}
+
+.water {
+
+    --color: #1479FB;
+
+    --header-gradient: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+
+    --border-gradient: linear-gradient(180.57deg, #83B9FF -45.23%, #1479FB 158.14%);
+
+}
+
+.fire {
+
+    --color: #E75C35;
+
+    --header-gradient: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+
+    --border-gradient: linear-gradient(180.57deg, #E6901E -45.23%, #E75C35 158.14%);
+
+}
+
+.bug {
+    --header-gradient: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
+
+    --color: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
+}
+
+.normal {
+    --header-gradient: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%);
+
+    --color: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%);
+
+}
+
+.fighting {
+    --header-gradient: linear-gradient(176.83deg, #96402A -8.78%, #F1613C 169.09%, #CB735D 242.33%);
+
+    --color: linear-gradient(176.83deg, #96402A -8.78%, #F1613C 169.09%, #CB735D 242.33%);
+
+}
+
+.ground {
+    --header-gradient: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%);
+
+    --color: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%);
+}
+
+.rock {
+    --header-gradient: linear-gradient(177.03deg, #7E7E7E -11.97%, #8D8D94 57.49%, #D3D3D3 135.64%);
+
+    --color: linear-gradient(177.03deg, #7E7E7E -11.97%, #8D8D94 57.49%, #D3D3D3 135.64%);
+}
+
+.ghost {
+    --header-gradient: linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%);
+
+    --color: linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%);
+}
+
+.steel {
+    --header-gradient: linear-gradient(179.75deg, #5E736C -19.96%, #728881 43.67%, #A8A8A8 138.4%);
+
+    --color: linear-gradient(179.75deg, #5E736C -19.96%, #728881 43.67%, #A8A8A8 138.4%);
+}
+
+.electric {
+    --header-gradient: linear-gradient(179.75deg, #0C1395 -19.96%, #2B319B 43.67%, #7075D9 138.4%);
+
+    --color: linear-gradient(179.75deg, #0C1395 -19.96%, #2B319B 43.67%, #7075D9 138.4%);
+}
+
+.psychic {
+    --header-gradient: linear-gradient(179.75deg, #E62D2D -19.96%, #D13E3E 43.67%, #F07F7F 138.4%);
+
+    --color: linear-gradient(179.75deg, #E62D2D -19.96%, #D13E3E 43.67%, #F07F7F 138.4%);
+}
+
+.ice {
+    --header-gradient: linear-gradient(177.03deg, #6FBEDF -11.97%, #64CBF5 47.77%, #BDEBFE 136.72%);
+
+    --color: linear-gradient(177.03deg, #6FBEDF -11.97%, #64CBF5 47.77%, #BDEBFE 136.72%);
+}
+
+.dragon {
+    --header-gradient: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%);
+
+    --color: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%);
+}
+
+.dark {
+    --header-gradient: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%);
+
+    --color: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%);
+}
+
+.fairy {
+    --header-gradient: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%);
+
+    --color: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%);
+}
+
+.pokeinfo__img {
+    max-width: 250px;
+    width: 60%;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pokeinfo__container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.div__img {
+    margin-top: 20vh;
+    display: flex;
+    aspect-ratio: 2;
+    position: relative;
+    background: var(--header-gradient);
+    justify-content: center;
+    height: 18vh;
+    width: 100%;
+}
+
+.pokeinfo__header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 70vh;
+    padding-bottom: 2em;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    justify-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90vw;
+    max-width: 1116px;
+    margin: 0 auto;
+    background: #FFFFFF;
+}
+
+.pokeinfo__order {
+    grid-column: span 4;
+    border: 1px solid #D3D3D3;
+    font-family: Roboto;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.pokeinfo__name {
+    grid-column: span 4;
+    text-align: center;
+    margin: 0;
+    font-size: 1.3rem;
+    color: #333;
+    font-family: Roboto;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 53px;
+    letter-spacing: 0em;
+
+}
+
+.doble-linea {
+    position: relative;
+    display: inline-block;
+}
+
+.doble-linea::before,
+.doble-linea::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 2px;
+    background: rgb(189, 188, 188);
+}
+
+.doble-linea::before {
+    right: 100%;
+    margin-right: 5px;
+}
+
+.doble-linea::after {
+    left: 100%;
+    margin-left: 5px;
+}
+
+
+.pokeinfo__height {
+    grid-column: 2;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+
+
+}
+
+.pokeinfo__weight {
+    grid-column: 3;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.pokeinfo__type {
+    grid-column: span 2;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.pokeinfo__abilities {
+    grid-column: span 2;
+    grid-row: 4;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.pokeinfo__abilities__ul {
+    grid-column: 1;
+    grid-row: 5;
+    grid-column: span 2;
+    display: flex;
+    column-gap: 1em;
+}
+
+.pokeinfo__abilities__value {
+    border: 1px solid gray;
+    padding: 0.4em;
+    font-size: 1.2rem;
+}
+
+.pokeinfo__type__value {
+    border: 1px solid gray;
+    padding: 0.4em;
+    font-size: 1.2rem;
+}
+
+.pokeinfo__type__ul {
+    grid-column: span 2;
+    display: flex;
+    column-gap: 1em;
+}
+
+.pokeinfo__stats {
+    grid-column: span 4;
+    font-size: 1.4rem;
+}
+
+.pokeinfo__stats__ul {
+    grid-column: span 4;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    column-gap: 1.6em;
+    font-weight: 500;
+}
+
+.span__stats {
+    font-weight: 600;
+    margin-right: 5px;
+    font-size: 1.8rem;
+}
+
+.pokeinfo__section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90vw;
+    max-width: 1116px;
+    margin-top: 4em;
+    background: #FFFFFF;
+    border: 1px solid #ddd;
+    column-gap: 1.5em;
+    row-gap: 1.5em;
+    align-items: flex-start;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.pokeinfo__movements {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.pokeinfo__movements__value {
+    border: 1px solid #E5E5E5;;
+    padding: 0.6em;
+    background: #E5E5E5;
+    margin: 1rem;
+    border-radius: 11%;
+    font-weight: 400;
+}
+
+.pokeinfo__movements__ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media  only screen and (max-width: 777px) {
+    .pokeinfo__order {
+        font-size: 1.5em;    
+    }
+    
+    .pokeinfo__name {
+        font-size: 1.7rem;
+    
+    }
+    
+    .doble-linea {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .doble-linea::before,
+    .doble-linea::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 50%;
+        height: 2px;
+        background: rgb(189, 188, 188);
+    }
+    
+    .doble-linea::before {
+        right: 100%;
+        margin-right: 5px;
+    }
+    
+    .doble-linea::after {
+        left: 100%;
+        margin-left: 5px;
+    }
+    
+    
+    .pokeinfo__height {
+        font-size: 0.7rem;
+    
+    }
+    
+    .pokeinfo__weight {
+        font-size: 0.7rem;
+    }
+    
+    .pokeinfo__type {
+        grid-column: span 2;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    .pokeinfo__abilities {
+        grid-column: span 2;
+        grid-row: 4;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    .pokeinfo__abilities__ul {
+        grid-column: 1;
+        grid-row: 5;
+        grid-column: span 2;
+        display: flex;
+        column-gap: 0.5em;
+    }
+    
+    .pokeinfo__abilities__value {
+        border: 1px solid gray;
+        padding: 0.2em;
+        font-size: 0.7rem;
+    }
+    
+    .pokeinfo__type__value {
+        border: 1px solid gray;
+        padding: 0.2em;
+        font-size: 0.7rem;
+    }
+    
+    .pokeinfo__type__ul {
+        grid-column: span 2;
+        display: flex;
+        column-gap: 0.5em;
+    }
+    
+    .pokeinfo__stats {
+        grid-column: span 4;
+        font-size: 1.4rem;
+    }
+    
+    .pokeinfo__stats__ul {
+        grid-column: span 4;
+        display: flex;
+        justify-content: center;
+        font-size: 0.8rem;
+        column-gap: 0.3em;
+        font-weight: 500;
+    }
+    
+    .span__stats {
+        font-weight: 600;
+        margin-right: 5px;
+        font-size: 0.8rem;
+    }
+    
+    .pokeinfo__section {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 90vw;
+        max-width: 1116px;
+        margin-top: 4em;
+        background: #FFFFFF;
+        border: 1px solid #ddd;
+        column-gap: 1.5em;
+        row-gap: 1.5em;
+        align-items: flex-start;
+        align-content: stretch;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    
+    .pokeinfo__movements {
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+    
+    .pokeinfo__movements__value {
+        border: 1px solid #E5E5E5;;
+        padding: 0.6em;
+        background: #E5E5E5;
+        margin: 1rem;
+        border-radius: 11%;
+        font-weight: 400;
+    }
+    
+    .pokeinfo__movements__ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
